@@ -1,2 +1,2 @@
-# protobufServerClient
-dummy service for learning purposes
+# grpcExample
+dummy service
