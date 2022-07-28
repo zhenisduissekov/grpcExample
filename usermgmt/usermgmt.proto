@@ -1,0 +1,29 @@
+syntax="proto3";
+
+package usermgmt;
+
+option go_package="example.com/go-usermgmt-grpc;go_usermgmt_grpc";
+
+service UserManagement {
+  rpc CreateNewUser(NewUser) returns (User) {};
+  rpc GetUsers(GetUserParams) returns (UserList) {};
+}
+
+message NewUser {
+  string Name=1;
+  int32 Age=2;
+}
+
+message User {
+  string Name=1;
+  int32 Age=2;
+  int32 Id=3;
+}
+
+message GetUserParams {
+
+}
+
+message UserList {
+  repeated User users = 1;
+}
