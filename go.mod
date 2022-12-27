@@ -1,6 +1,6 @@
 module example.com/go-usermgmt-grpc
 
-go 1.18
+go 1.18sdsd
 
 require (
 	github.com/jackc/pgx/v4 v4.16.1
